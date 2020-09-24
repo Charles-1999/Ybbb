@@ -1,0 +1,59 @@
+.comment-list {
+    padding: 1em 1em 0;
+}
+
+.comment {
+    display: flex;
+    padding: 1em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment .post {
+    width: 4em;
+    height: 6em;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.comment .post img {
+    width: 100%;
+    height: 100%;
+}
+
+.comment .details {
+    display: flex;
+    flex-direction: column;
+    color: #444;
+}
+
+.comment .details .user {
+    display: flex;
+    align-items: center;
+}
+
+.comment .details .user .portrait {
+    width: 1.6em;
+    height: 1.6em;
+    margin: 0 0.8em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.comment .details .user .portrait img {
+    width: 100%;
+    height: 100%;
+}
+
+.comment .details .user .stars {
+    width: 4em;
+    margin: 0 0.8em;
+}
+
+.comment .details .user .stars img {
+    width: 100%;
+}
+
+.comment .details .content {
+    margin-left: 1.5em;
+    margin-top: 0.2em;
+}

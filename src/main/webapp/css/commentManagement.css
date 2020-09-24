@@ -1,0 +1,93 @@
+
+.searchBar input {
+    width: 400px;
+}
+
+.right .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(0,0%,100%,.3);
+}
+
+.comment-left {
+    width: 90%;
+}
+
+.comment-right {
+    width: 10%;
+    text-align: center;
+}
+
+.comment .row {
+    /* display: flex; */
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .6);
+}
+
+.comment .row>div {
+    margin-right: 20px;
+}
+
+.comment .row>div span {
+    display: inline-block;
+    width: 57px;
+    text-align: right;
+    color: #fafafa;
+    margin-right: 5px;
+}
+
+.comment .row-left {
+    float: left;
+    width: 90px;
+}
+
+.comment .row-right {
+    float: left;
+    width: 662px;
+}
+
+.comment .comment-del {
+    color: #0d9bff;
+}
+
+.del-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 40px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #2a2a32;
+}
+
+.del-alert .alert-text {
+    color: #0d90ff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.del-alert .alert-btn a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 10px;
+    color: #fafafa;
+    border-radius: 10px;
+    background: #0d9bff
+}
+
+.del-alert .alert-btn a.comfirm {
+    color: #0d90ff;
+    background: none;
+}

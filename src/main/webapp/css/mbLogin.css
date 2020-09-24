@@ -1,0 +1,80 @@
+.header {
+    justify-content: center;
+}
+
+.main {
+    margin-top: 2em;
+}
+
+.main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main input {
+    width: 50%;
+    height: 1.6em;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    color: #dddddd;
+    border-radius: 1em;
+    border: 1px solid #ddd;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.main input[type=submit] {
+    width: 50%;
+    height: 1.6em;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    color: #dddddd;
+    border-radius: 1em;
+    border: 1px solid #ddd;
+    background: #0d90ff;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 2.5em;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    /* margin-top: 1em; */
+    background: #0d90ff;
+    text-transform: uppercase;
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+}
+
+button.white {
+    color: #0d90ff;
+    border: 1px solid #0d90ff;
+    background: #fff;
+    
+}
+
+p {
+    margin: 0.5em;
+    color: #bbb;
+}
+
+.text {
+    margin-top: 1em;
+    text-align: center;
+    color: #666;
+}
+
+.text span {
+    color: #0d90ff;
+}

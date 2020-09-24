@@ -1,0 +1,64 @@
+/* 
+    nav 模块
+*/
+.nav {
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+}
+
+.nav .dropdown .dt {
+    font-weight: 500;
+    color: #fafafa;
+}
+
+.nav .dropdown .dl {
+    background-color: rgba(105,101,101,.9);
+}
+
+/* 
+    main 模块
+*/
+.main {
+    margin-top: 40px;
+}
+
+.main .hd>h1 {
+    font-size: 25px;
+    cursor: default;
+}
+
+.category {
+    margin-top: 20px;
+}
+
+.category .cate-warp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-top: 10px;
+}
+
+.category .cate-warp span {
+    margin: 2px 8px;
+    padding: 0 5px;
+    line-height: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.category .cate-warp span.active {
+    background-color: #0d90ff;
+    border-radius: 5px;
+}
+
+.sort {
+    margin-top: 20px;
+}
+
+.sort label {
+    margin: 0 8px;
+}
+
+.sort label input {
+    margin-right: 5px;
+}

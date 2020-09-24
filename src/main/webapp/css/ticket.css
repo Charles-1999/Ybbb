@@ -1,0 +1,56 @@
+/* 
+    nav 模块
+*/
+.nav {
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+}
+
+.nav .dropdown .dt {
+    font-weight: 500;
+    color: #fafafa;
+}
+
+.nav .dropdown .dl {
+    background-color: rgba(105,101,101,.9);
+}
+
+/* 
+    main 模块
+*/
+.main {
+    margin-top: 40px;
+}
+
+.main>h1 {
+    font-size: 25px;
+    cursor: default;
+}
+
+.title-warp {
+    margin-top: 30px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+    color: #0d90ff;
+    cursor: default;
+}
+
+.item .time {
+    color: #666;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.item .buy {
+    width: 80px;
+    height: 20px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    background: #666;
+}

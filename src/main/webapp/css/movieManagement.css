@@ -1,0 +1,147 @@
+.right .select-warp {
+    display: flex;
+    align-items: center;
+}
+
+.right .selector {
+    margin: 20px 0;
+}
+
+.right .selector label {
+    margin-right: 20px;
+}
+
+.right .selector select {
+    width: 60px;
+    height: 25px;
+    border-radius: 6px;
+    background: #a2a2a3;
+    outline: none;
+}
+
+.right .upload-btn {
+    width: 80px;
+    height: 30px;
+    margin-left: 100px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #0d9bff;
+    cursor: pointer;
+}
+
+.movie {
+    display: flex;
+    margin-top: 30px;
+}
+
+.movie .post {
+    display: block;
+    width: 100px;
+    height: 150px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.movie .post img {
+    width: 100%;
+    height: 100%;
+}
+
+.movie .info {
+    flex: 4;
+    width: 70%;
+    margin-left: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .6);
+    line-height: 20px;
+}
+
+.movie .info div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.movie span {
+    color: #e09015;
+}
+
+.movie .info .movieName {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #0d9bff;
+}
+
+.movie .btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.movie .btn .edit,
+.movie .btn .del {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background: #0d9bff;
+    box-sizing: border-box;
+}
+
+.movie .btn .edit:hover,
+.movie .btn .del:hover {
+    background: none;
+    color: #0d9bff;
+    border: 1px solid #0d9bff;
+}
+
+.movie .btn .edit {
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid rgba(255, 255, 255, .6);
+}
+
+.movie .btn .del {
+    border-radius: 0 10px 10px 0;
+}
+
+.del-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 40px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #2a2a32;
+}
+
+.del-alert .alert-text {
+    color: #0d90ff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.del-alert .alert-btn a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 10px;
+    color: #fafafa;
+    border-radius: 10px;
+    background: #0d9bff
+}
+
+.del-alert .alert-btn a.comfirm {
+    color: #0d90ff;
+    background: none;
+}

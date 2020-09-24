@@ -1,0 +1,11 @@
+INSERT INTO `comment`(`id`, `userId`, `stars`, `time`, `movieId`, `title`, `content`, `praise`, `bad`, `response`) VALUES (5, 1, NULL, '2020-07-04 00:19:58', 8, '1', '1', NULL, NULL, NULL);
+INSERT INTO `comment`(`id`, `userId`, `stars`, `time`, `movieId`, `title`, `content`, `praise`, `bad`, `response`) VALUES (6, 1, NULL, '2020-07-04 00:20:23', 8, '2', '2', NULL, NULL, NULL);
+INSERT INTO `comment`(`id`, `userId`, `stars`, `time`, `movieId`, `title`, `content`, `praise`, `bad`, `response`) VALUES (11, 1, NULL, '2020-07-04 00:56:08', 8, '我是主播', '主播永远滴神', 0, 0, 0);
+INSERT INTO `comment`(`id`, `userId`, `stars`, `time`, `movieId`, `title`, `content`, `praise`, `bad`, `response`) VALUES (12, 1, NULL, '2020-07-04 01:07:15', 2, '谢颢铭永远滴神', '谢颢铭yyds', 0, 0, 0);
+INSERT INTO `comment`(`id`, `userId`, `stars`, `time`, `movieId`, `title`, `content`, `praise`, `bad`, `response`) VALUES (13, 2, NULL, '2020-07-04 01:14:45', 5, '我是谢颢铭', '谢颢铭是真的顶', 0, 0, 0);
+INSERT INTO `comment`(`id`, `userId`, `stars`, `time`, `movieId`, `title`, `content`, `praise`, `bad`, `response`) VALUES (14, 1, NULL, '2020-07-04 18:01:32', 5, '粉宝！！', '粉宝是真的帅！！！！', 0, 0, 0);
+INSERT INTO `comment`(`id`, `userId`, `stars`, `time`, `movieId`, `title`, `content`, `praise`, `bad`, `response`) VALUES (21, 2, NULL, '2020-07-06 18:22:12', 1, '移动端', '移动端111', 0, 0, 0);
+INSERT INTO `comment`(`id`, `userId`, `stars`, `time`, `movieId`, `title`, `content`, `praise`, `bad`, `response`) VALUES (24, 1, NULL, '2020-07-06 22:39:27', 5, 'test', '5678', 0, 0, 0);
+INSERT INTO `comment`(`id`, `userId`, `stars`, `time`, `movieId`, `title`, `content`, `praise`, `bad`, `response`) VALUES (25, 1, NULL, '2020-07-06 22:40:27', 5, '', 'asdgags', 0, 0, 0);
+INSERT INTO `comment`(`id`, `userId`, `stars`, `time`, `movieId`, `title`, `content`, `praise`, `bad`, `response`) VALUES (26, 1, NULL, '2020-07-06 22:40:51', 8, '', '11111', 0, 0, 0);
+INSERT INTO `comment`(`id`, `userId`, `stars`, `time`, `movieId`, `title`, `content`, `praise`, `bad`, `response`) VALUES (27, 1, NULL, '2020-07-06 22:41:37', 8, '444', '8888888888', 0, 0, 0);

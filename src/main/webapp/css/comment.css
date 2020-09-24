@@ -1,0 +1,144 @@
+/* 
+    nav 模块
+*/
+.nav {
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+}
+
+.nav .dropdown .dt {
+    font-weight: 500;
+    color: #fafafa;
+}
+
+.nav .dropdown .dl {
+    background-color: rgba(105,101,101,.9);
+}
+
+/* 
+    main 模块
+*/
+.main {
+    margin-top: 40px;
+}
+
+.main .hd>h1 {
+    font-size: 25px;
+    cursor: default;
+}
+
+.comment-warp .comment {
+    display: flex;
+    margin: 20px 10px 0;
+    padding: 20px 5px 0;
+    border-top: 1px solid hsla(0,0%,100%,.1);
+}
+
+.comment div {
+    cursor: default;
+}
+
+.comment .img {
+    display: block;
+    width: 80px;
+    height: 120px;
+    /* overflow: hidden; */
+}
+
+.comment .img img {
+    width: 100%;
+    transition: transform .5s;
+}
+
+.comment .img img:hover {
+    transform: scale(3) translateX(-25px);
+}
+
+.details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.details .user {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.details .user .portrait {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.details .user .portrait a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.details .user .portrait a img {
+    width: 100%;
+    height: 100%;
+}
+
+.details .user .name {
+    margin: 0 10px;
+}
+
+.details .user .stars {
+    width: 60px;
+    /* height: 10px; */
+    overflow: hidden;
+}
+
+.details .user .stars img {
+    width: 100%;
+}
+
+.details .user .time {
+    margin: 0 10px;
+    color: rgba(255, 255, 255, .6);
+}
+
+.comment .movieName {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.comment .movieName a {
+    color: #0d90ff;
+}
+
+.comment .content {
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* -webkit-line-clamp: 4; */
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.more {
+    font-size: 13px;
+}
+
+.details .btn {
+    margin-top: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.details .btn span:hover {
+    color: #0d90ff;
+}
+
+.details .btn .bad {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.details .btn .response {
+    margin-left: 15px;
+}

@@ -1,0 +1,52 @@
+.right .info-warp .info{
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    border-bottom: 1px solid hsla(0,0%,100%,.1);
+}
+
+.info .info-title {
+    width: 200px;
+}
+
+.info .info-text {
+    width: 480px;
+}
+
+.info-text input {
+    padding-left: 20px;
+    width: 80%;
+    height: 35px;
+    color: #fafafa;
+    border: 0;
+    border-radius: 10px;
+    background: #35353a;
+    outline: none;
+}
+
+.info .info-edit {
+    width: 200px;
+    text-align: right;
+}
+
+.info .info-edit a {
+    font-size: 14px;
+    color: #0d9bff;
+    font-weight: 700;
+}
+
+.info .info-edit span {
+    margin: 0 10px;
+    color: rgba(255, 255, 255, );
+}
+
+.info .portrait {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.info .portrait img {
+    width: 100%;
+}

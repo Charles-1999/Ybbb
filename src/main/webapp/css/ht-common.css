@@ -1,0 +1,102 @@
+.header .logo {
+    width: 280px;
+}
+
+.searchBar {
+    display: flex;
+}
+
+.searchBar input {
+    /* width: 400px; */
+    height: 30px;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, .6);
+    border: 0;
+    border-radius: 10px 0 0 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    outline: none;
+}
+
+.searchBar .btn_search {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    background-color: #0d9bff;
+    cursor: pointer;
+}
+
+.main {
+    margin-top: 20px;
+}
+
+.main .left,
+.main .right {
+    padding: 20px 40px;
+    border-radius: 10px;
+    background: #1e1e24;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+.main .left {
+    width: 220px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.main .right {
+    width: 960px;
+}
+
+.left .top .portrait {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.left .top .portrait img {
+    width: 100%;
+}
+
+.left .top .name {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.left .top .logout a {
+    font-size: 13px;
+    color: #0d9bff;
+}
+
+.left .list {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid hsla(0,0%,100%,.3);
+}
+
+.left .list li a {
+    display: block;
+    padding: 15px 0;
+    color: rgba(255, 255, 255, .6);
+}
+
+.left .list li a:hover {
+    color: #0d9bff;
+    font-weight: 700;
+}
+
+.left .list li.active a {
+    color: #0d9bff;
+    font-weight: 700;
+}
+
+.right .title {
+    font-size: 18px;
+    font-weight: 700;
+}

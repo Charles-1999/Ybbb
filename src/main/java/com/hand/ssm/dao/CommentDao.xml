@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.ssm.dao.CommentDao">
+
+	<select id="getCommentById" parameterType="com.hand.ssm.dto.Comment"
+		resultType="com.hand.ssm.dto.Comment">
+			select * from comment where id = #{id}
+	</select>
+
+	<resultMap type="com.hand.ssm.dto.Comment" id="CommentResultMap">
+		<id property="id" column="id"></id>
+		<result property="userId" column="userId" />
+		<result property="stars" column="stars" />
+		<result property="time" column="time" />
+		<result property="movieId" column="movieId" />
+		<result property="title" column="title" />
+		<result property="content" column="content" />
+		<result property="praise" column="praise" />
+		<result property="bad" column="bad" />
+		<result property="response" column="response" />
+		<result property="uName" column="name" />
+		<result property="movieName" column="movieName" />
+	</resultMap>
+
+	<select id="getCommentList" resultMap="CommentResultMap">
+		SELECT comment.*,user.name,movie.name as movieName FROM comment,user,movie WHERE comment.userId = user.id AND movie.id = comment.movieId GROUP BY id
+	</select>
+	
+	<select id="getCommentListByMId" resultMap="CommentResultMap">
+		SELECT comment.*,user.name FROM comment,user WHERE comment.userId = user.id AND movieId = #{MId}
+	</select>
+	
+	<select id="getCommentListByUId" resultMap="CommentResultMap">
+		SELECT comment.*,movie.name as movieName FROM comment,movie WHERE userId = #{id} AND movie.id = comment.movieId
+	</select>
+
+	<insert id="insertComment" parameterType="com.hand.ssm.dto.Comment">
+		INSERT INTO comment(userId,movieId,title,content) VALUES(#{userId},#{movieId},#{title},#{content})
+	</insert>
+	
+	<delete id="delCommentById">
+		DELETE FROM comment WHERE id = #{id}
+	</delete>
+</mapper>

@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+a,a:visited {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+/* 
+    header 模块
+*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 3.5em;
+    padding: 0.5em 1em;
+    line-height: 2.5em;
+    color: rgba(0, 0, 0, .8);
+}
+
+.header .title {
+    color: #0d90ff;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.header .user a {
+    color: #000;
+}
+
+.searchBar input {
+    width: 15em;
+    height: 1.5em;
+    padding: 0 1em;
+    font-size: 1em;
+    line-height: 1.5em;
+    border: 0;
+    border-radius: 6px;
+    background: #f0f0f0;
+    outline: none;
+}
+
+/* 
+    nav 模块
+*/
+.nav {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+}
+
+.nav .nav-list {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 1em;
+}
+
+.nav .nav-list .nav-item a {
+    display: block;
+    width: 3em;
+    margin: 0 0.2em;
+    font-size: 1.2em;
+    text-align: center;
+    color: #000;
+}
+
+.nav .nav-list .nav-item-c3 a {
+    display: block;
+    width: 4em;
+    margin: 0 0.2em;
+    font-size: 1.2em;
+    text-align: center;
+    color: #000;
+}
+
+.nav .nav-list .active a {
+    color: #0d90ff;
+    font-weight: 700;
+}
+
+.section {
+    margin-top: 1.5em;
+}
+
+.section .title {
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 0 1em;
+}
+
+.movie-list {
+    display: flex;
+    padding: 1em 0;
+    overflow-x: auto;
+}
+
+.movie-list .movie {
+    width: 10em;
+    padding: 0 1em;
+}
+
+.movie-list .movie .post {
+    display: block;
+    width: 8em;
+    height: 12em;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.movie-list .movie .post img {
+    width: 100%;
+    height: 100%;
+}
+
+.movie-list .movie .name {
+    margin-top: 0.5em;
+    font-weight: 550;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.movie-list .movie .score {
+    display: flex;
+    align-items: center;
+}
+
+.movie-list .movie .score .stars {
+    width: 50%;
+    height: 100%;
+}
+
+.movie-list .movie .score .stars img {
+    width: 100%;
+    height: 100%;
+}
+
+.movie-list .movie .score .text {
+    margin-left: 0.5em;
+    font-size: 0.8em;
+    color: #757575;
+}
+
+/* 
+    footer 模块
+*/
+.footer {
+    margin: 1em 1em;
+    padding: 2em 0;
+    border-top: 1px solid #000;
+}
+
+.footer .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .links span {
+    margin: 0 0.5em;
+    color: #000;
+}
+
+.footer .links a {
+    color: #757575;
+}
+
+.footer .copyright {
+    margin-top: 1em;
+    text-align: center;
+}

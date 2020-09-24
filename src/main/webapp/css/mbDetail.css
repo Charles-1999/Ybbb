@@ -1,0 +1,170 @@
+.info-warp {
+    display: flex;
+    padding: 1em 1em;
+    background: #2a2a32;
+}
+
+.info-warp .warp-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-warp .warp-left .post {
+    width: 8em;
+    height: 12em;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.info-warp .warp-left .post img {
+    width: 100%;
+    height: 100%;
+}
+
+.info-warp .warp-left .btn {
+    width: 80%;
+    padding: 0.2em 0;
+    margin-top: 1em;
+    color: #333;
+    font-size: 0.8em;
+    text-align: center;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, .9);
+}
+
+.info-warp .warp-left .stars img {
+    margin-top: 0.8em;
+    width: 6em;
+}
+
+.info-warp .warp-left .text {
+    color: #e09015;
+}
+
+.info-warp .warp-right {
+    flex: 1;
+    margin-left: 1em;
+}
+
+.info-warp .warp-right .movieName {
+    font-size: 1.1em;
+    color: #0d90ff;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.info-warp .warp-right .detail {
+    color: rgba(255, 255, 255, .6);
+}
+
+.info-warp .warp-right .detail .row {
+    margin-bottom: 0.1em;
+}
+
+.intro {
+    margin-top: 1em;
+}
+
+.intro .content {
+    padding: 1em 1.5em;
+    text-indent: 2em;
+    color: #333;
+}
+
+.comment-list {
+    padding: 0 1em;
+}
+
+.comment {
+    margin-top: 1em;
+
+}
+
+.comment .details {
+    display: flex;
+    flex-direction: column;
+    color: #444;
+}
+
+.comment .details .user {
+    display: flex;
+    align-items: center;
+}
+
+.comment .details .user .portrait {
+    width: 1.6em;
+    height: 1.6em;
+    margin: 0 0.8em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.comment .details .user .portrait img {
+    width: 100%;
+    height: 100%;
+}
+
+.comment .details .user .stars {
+    width: 4em;
+    margin: 0 0.8em;
+}
+
+.comment .details .user .stars img {
+    width: 100%;
+}
+
+.comment .details .content {
+    margin-left: 1.5em;
+    margin-top: 0.2em;
+}
+
+.comment-input {
+    margin: 1em;
+    padding-bottom: 1em;
+    border-radius: 0.5em;
+    background: #25252b;
+}
+
+.input-body input {
+    width: 100%;
+    height: 2em;
+    padding: 2em 1em;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    border: 0;
+    border-radius: 0.5em 0.5em 0 0;
+    background-color: #25252b;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.comment-text textarea {
+    width: 100%;
+    height: 6em;
+    padding: 1em;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1em;
+    border: 0;
+    border-radius: 0 0 0.5em 0.5em;
+    background-color: #25252b;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn input {
+    width: 6em;
+    height: 2em;
+    border-radius: 0.5em;
+    border: 0;
+    font-size: 1em;
+    color: #fafafa;
+    background: #0d9bff;
+    outline: none;
+}

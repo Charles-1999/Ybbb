@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.ssm.dao.MovieDao">
+	<select id="getMovieById" parameterType="com.hand.ssm.dto.Movie"
+		resultType="com.hand.ssm.dto.Movie">
+		select * from movie where id = #{id}
+	</select>
+
+	<resultMap type="com.hand.ssm.dto.Movie" id="MovieResultMap">
+		<id property="id" column="id"></id>
+		<result property="name" column="name" />
+		<result property="form" column="form" />
+		<result property="type" column="type" />
+		<result property="region" column="region" />
+		<result property="time" column="time" />
+		<result property="tag" column="tag" />
+		<result property="score" column="score" />
+		<result property="director" column="director" />
+		<result property="actor" column="actor" />
+		<result property="intro" column="intro" />
+		<result property="stime" column="stime" />
+		<result property="duration" column="duration" />
+		<result property="writer" column="writer" />
+		<result property="language" column="language" />
+	</resultMap>
+	
+	<select id="getMovieList" resultMap="MovieResultMap">
+		select * from movie where form = '电影'
+	</select>
+	<select id="getTvList" resultMap="MovieResultMap">
+		select * from movie where form = '电视剧'
+	</select>
+	<select id="getAll" resultMap="MovieResultMap">
+		select * from movie
+	</select>
+
+	<select id="getHot" resultMap="MovieResultMap">
+		select * from movie where tag = '热门' AND form LIKE #{form}
+	</select>
+	<select id="getNew" resultMap="MovieResultMap">
+		select * from movie where tag = '正在上映'
+	</select>
+	<select id="getUpcoming" resultMap="MovieResultMap">
+		select * from movie where tag = '即将上映'
+	</select>
+	<select id="getMovieByTag" resultMap="MovieResultMap">
+		select * from movie where tag like #{tag} AND form = '电影'
+	</select>
+	<select id="getMovieByType" resultMap="MovieResultMap">
+		select * from movie where type like #{type} AND form = '电影'
+	</select>
+	
+	<select id="getListByTagTypeForm" resultMap="MovieResultMap" parameterType="com.hand.ssm.dto.Movie">
+		select * from movie where type LIKE #{type} AND form LIKE #{form} AND tag LIKE #{tag}
+	</select>
+	
+	<select id="getMovieByAll" resultMap="MovieResultMap" parameterType="com.hand.ssm.dto.Movie">
+		select * from movie where form like #{form} AND type LIKE #{type} AND region LIKE #{region}
+	</select>
+	
+	<select id="searchMovie" resultMap="MovieResultMap" >
+		select * from movie where name LIKE #{query} OR form LIKE #{query} OR actor LIKE #{query} OR type LIKE #{query} OR region LIKE #{query} OR time LIKE #{query} OR tag LIKE #{query} OR director LIKE #{query} OR writer LIKE #{query} OR language LIKE #{query} OR intro LIKE #{query}
+	</select>
+	
+	<select id="searchMovieID" resultMap="MovieResultMap" >
+		select * from movie where id LIKE #{query} OR name LIKE #{query} OR form LIKE #{query} OR actor LIKE #{query} OR type LIKE #{query} OR region LIKE #{query} OR time LIKE #{query} OR tag LIKE #{query} OR director LIKE #{query} OR writer LIKE #{query} OR language LIKE #{query} OR intro LIKE #{query}
+	</select>
+	
+	<update id="updateMovie" parameterType="com.hand.ssm.dto.Movie">
+		UPDATE movie SET 
+		name = #{name},director = #{director},writer = #{writer},actor = #{actor},form = #{form},type = #{type},tag = #{tag},
+		region = #{region},language = #{language},stime = #{stime},duration = #{duration},score = #{score},intro = #{intro}
+		WHERE id = #{id}
+	</update>
+	
+	<insert id="uploadMovie" parameterType="com.hand.ssm.dto.Movie">
+		INSERT INTO movie(name,director,writer,actor,form,type,tag,region,language,stime,duration,score,intro)
+		VALUES(#{name},#{director},#{writer},#{actor},#{form},#{type},#{tag},#{region},#{language},#{stime},#{duration},#{score},#{intro})
+	</insert>
+	
+	<delete id="delMovie">
+		DELETE FROM movie WHERE id = #{id}
+	</delete>
+</mapper>

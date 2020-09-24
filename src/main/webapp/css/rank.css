@@ -1,0 +1,155 @@
+/* 
+    nav 模块
+*/
+.nav {
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+}
+
+.nav .dropdown .dt {
+    font-weight: 500;
+    color: #fafafa;
+}
+
+.nav .dropdown .dl {
+    background-color: rgba(105,101,101,.9);
+}
+
+/* 
+    main 模块
+*/
+.main {
+    margin-top: 40px;
+}
+
+.main .hd>h1 {
+    font-size: 25px;
+    cursor: default;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    width: 30%;
+}
+
+.category {
+    margin-top: 20px;
+}
+
+.category .cate-warp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.category .cate-warp span {
+    margin: 2px 8px;
+    padding: 0 5px;
+    line-height: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.category .cate-warp span.active {
+    background-color: #0d90ff;
+    border-radius: 5px;
+}
+
+.movie-warp .movie {
+    display: flex;
+    padding: 20px 5px 0;
+    margin: 20px 10px 0;
+    border-top: 1px solid hsla(0,0%,100%,.1);
+}
+
+.movie-warp .movie .img {
+    display: block;
+    width: 100px;
+    height: 150px;
+    /* overflow: hidden; */
+}
+
+.movie-warp .movie .img img {
+    width: 100%;
+    height: 100%;
+    transition: transform .5s;
+}
+
+.movie-warp .movie .img img:hover {
+    transform: scale(3) translateX(-25px);
+}
+
+.movie-warp .movie .info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.movie-warp .movie .info .title {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.movie-warp .movie .info .title:hover {
+    color: #0d90ff;
+}
+
+.movie-warp .movie .info .details {
+    /* height: 75px; */
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .6);
+    cursor: default;
+}
+
+.movie-warp .movie .info .intro {
+    height: 75px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .6);
+    cursor: default;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.movie-warp .movie .info .score span {
+    color: #e09015;
+}
+
+.right .section h4 {
+    color: #0d90ff;
+    cursor: default;
+}
+
+.right .section .title-warp {
+    margin-top: 10px;
+}
+
+.right .section .title-warp .title {
+    margin: 8px 0;
+    padding: 0 5px 3px 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    color: rgba(255, 255, 255, .6);
+}
+
+.right .section .title-warp .title .name {
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: rgba(255, 255, 255, .8);
+    transition: transform .5s;
+}
+
+.right .section .title-warp .title .name:hover {
+    color: #0d90ff;
+    transform: translateX(5px);
+}

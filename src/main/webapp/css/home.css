@@ -1,0 +1,74 @@
+.linear {
+    position: absolute;
+    width: 100%;
+    background: -webkit-gradient(linear,left bottom,left top,from(rgba(22,22,26,0)),to(#16161a));
+    background: -webkit-linear-gradient(bottom,rgba(22,22,26,0),#16161a 100%);
+    background: linear-gradient(0,rgba(22,22,26,0),#16161a 100%);
+    padding-bottom: 10%;
+}
+
+#linear_bottom {
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(22,22,26,0)),to(#16161a));
+    background: -webkit-linear-gradient(top,rgba(22,22,26,0),#16161a 100%);
+    background: linear-gradient(180deg,rgba(22,22,26,0),#16161a 100%);
+    height: 20%;
+    bottom: 0;
+    padding-bottom: 0;
+}
+
+/* 
+    banner 模块
+*/
+.banner {
+    position: relative;
+}
+
+.banner>a {
+    display: block;
+    width: 100%;
+}
+
+.banner>a img {
+    width: 100%;
+}
+
+/* 
+    section 模块
+*/
+.section-warp {
+    margin-top: 30px;
+}
+
+.title-warp {
+    display: flex;
+    align-items: flex-end;
+}
+
+.title-warp h2 {
+    cursor: default;
+}
+
+.sub-title {
+    margin-left: 20px;
+}
+
+.sub-title ul {
+    display: flex;
+}
+
+.sub-title ul li {
+    margin: 0 7px;
+}
+
+.sub-title ul li a {
+    color: hsla(0,0%,100%,.6);
+}
+
+.sub-title ul li.active a {
+    color: #0d90ff;
+}
+
+.sub-title ul li:hover a {
+    color: #0d90ff;
+}
+

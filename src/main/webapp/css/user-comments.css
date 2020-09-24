@@ -1,0 +1,194 @@
+.main {
+    margin-top: 20px;
+}
+
+.main .left,
+.main .right {
+    padding: 20px 40px;
+    border-radius: 10px;
+    background: #1e1e24;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+.main .left {
+    width: 220px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.main .right {
+    width: 960px;
+}
+
+.left .top .portrait {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.left .top .portrait img {
+    width: 100%;
+}
+
+.left .top .name {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.left .top .time {
+    font-size: 12px;
+    color: rgba(255, 255, 255, .6);
+}
+
+.left .list {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid hsla(0,0%,100%,.3);
+}
+
+.left .list li a {
+    display: block;
+    padding: 15px 0;
+    color: rgba(255, 255, 255, .6);
+}
+
+.left .list li a:hover {
+    color: #0d9bff;
+    font-weight: 700;
+}
+
+.left .list li.active a {
+    color: #0d9bff;
+    font-weight: 700;
+}
+
+.right .title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.comment-warp .comment {
+    display: flex;
+    margin: 20px 10px 0;
+    padding: 0 5px 20px;
+    border-bottom: 1px solid hsla(0,0%,100%,.1);
+}
+
+.comment div {
+    cursor: default;
+}
+
+.comment .img {
+    display: block;
+    width: 80px;
+    height: 120px;
+    /* overflow: hidden; */
+}
+
+.comment .img img {
+    width: 100%;
+    transition: transform .5s;
+}
+
+.comment .img img:hover {
+    transform: scale(3) translateX(-25px);
+}
+
+.details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+
+.details .top .movieTitle {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.details .top .movieTitle a {
+    color: #0d90ff;
+}
+
+.details .info .stars {
+    width: 60px;
+    /* height: 10px; */
+    overflow: hidden;
+}
+                    
+.details .info {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.details .info .stars img {
+    width: 100%;
+}
+
+.details .info .time {
+    margin: 0 10px;
+    color: rgba(255, 255, 255, .6);
+}
+
+.comment .content {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.comment .del {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.comment .del a {
+    color: rgba(255, 255, 255, .6);
+}
+
+.comment .del a:hover {
+    color: #0d90ff
+}
+
+.del .del-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 40px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: #2a2a32;
+}
+
+.del .del-alert .alert-text {
+    color: #0d90ff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.del .del-alert .alert-btn a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 10px;
+    color: #fafafa;
+    border-radius: 10px;
+    background: #0d9bff
+}
+
+.del .del-alert .alert-btn a.comfirm {
+    color: #0d90ff;
+    background: none;
+}

@@ -1,0 +1,102 @@
+.right .editArea {
+    margin-top: 20px;
+}
+
+.right .editArea .option {
+    display: flex;
+    margin: 15px 0;
+}
+
+.right .editArea .option span {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+
+.right .editArea .edit-left input {
+    width: 80%;
+    height: 25px;
+    padding-left: 10px;
+    color: rgba(255, 255, 255, .8);
+    font-size: 16px;
+    border: 0;
+    border-radius: 6px;
+    background: #35353a;
+    outline: none;
+}
+
+.right .editArea input:disabled {
+    background: #1e1e24;
+}
+
+.right .editArea textarea {
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    color: rgba(255, 255, 255, .8);
+    font-size: 16px;
+    background: #35353a;
+    border: 0;
+    border-radius: 6px;
+    resize: none;
+    outline: none;
+}
+
+.right .editArea .edit-left {
+    width: 75%;
+}
+
+.right .editArea .edit-right {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.edit-right .post {
+    width: 170px;
+    height: 255px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.edit-right .post img {
+    width: 100%;
+}
+
+.edit-right .post-btn {
+    width: 80px;
+    height: 25px;
+    margin: 20px 0;
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    border-radius: 6px;
+    background: #0d9bff;
+    cursor: pointer;
+}
+
+.edit-right .intro {
+    width: 100%;
+}
+
+.edit-right .intro span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.edit-right .submit-btn input {
+    width: 80px;
+    height: 25px;
+    margin: 20px 0;
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    color: #fafafa;
+    border: 0;
+    border-radius: 6px;
+    background: #0d9bff;
+    outline: none;
+    cursor: pointer;
+}

@@ -1,0 +1,67 @@
+/* 
+    nav 模块
+*/
+.nav {
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+}
+
+/* 
+    main 模块
+*/
+.main {
+    margin-top: 40px;
+}
+
+.main .hd>h1 {
+    font-size: 25px;
+    cursor: default;
+}
+
+.category {
+    margin-top: 20px;
+}
+
+.category .cate-warp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-top: 10px;
+}
+
+.category .cate-warp span {
+    margin: 2px 8px;
+    padding: 0 5px;
+    line-height: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.category .cate-warp span.active {
+    background-color: #0d90ff;
+    border-radius: 5px;
+}
+
+.tag-warp {
+    width: 60%;
+    margin-top: 20px;
+}
+
+.tag-warp .tags {
+    display: inline-block;
+    margin-left: 8px;
+    border: 1px solid #0d90ff;
+    border-radius: 5px;
+}
+
+.tag-warp .tags .item {
+    float: left;
+    padding: 0 10px;
+    line-height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.tag-warp .tags .item.active {
+    color: #0d90ff;
+}
